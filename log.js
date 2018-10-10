@@ -11,13 +11,12 @@ const config = {
 
 log4js.configure(config);
 
-// 终端输出
+// 日志终端打印
 const logger = log4js.getLogger('console');
 
-// 绑定console
+// 程序日志绑定
 console.log = logger.info.bind(logger);
 console.warn = logger.warn.bind(logger);
 console.error = logger.error.bind(logger);
 
 module.exports = {log4js, logger};
-
