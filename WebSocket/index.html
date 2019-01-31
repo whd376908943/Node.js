@@ -28,9 +28,9 @@
     socket.on('chat message',function(id,msg){
       console.log(`id:${id}`)
       if (id === socket.id){
-          content='<div class="talk_recordboxme"> <div class="user"><img src="images/thumbs/15.jpg"/>美美</div> <div class="talk_recordtext"> <h3>' + msg + '</h3> <span class="talk_time">2010-01-31</span> </div> </div>'      
+          content='<div class="talk_recordboxme"> <div class="user"><img src="images/thumbs/15.jpg"/>美美</div> <div class="talk_recordtext"> <h3>' + msg + '</h3> <span class="talk_time">2019-01-31</span> </div> </div>'      
       }else{
-          content='<div class="talk_recordbox"> <div class="user"><img src="images/thumbs/11.jpg"/>壮壮</div>  <div class="talk_recordtext"> <h3>' + msg + '</h3> <span class="talk_time">2010-01-31</span> </div> </div>'
+          content='<div class="talk_recordbox"> <div class="user"><img src="images/thumbs/11.jpg"/>壮壮</div>  <div class="talk_recordtext"> <h3>' + msg + '</h3> <span class="talk_time">2019-01-31</span> </div> </div>'
       }
       $(content).appendTo('.jspPane');
     });
