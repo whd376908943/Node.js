@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+
+// Content-Type默认为application/x-www-form-urlencoded, 发送data类似于key1=value1&key2=value2,若要发送Json数据,需要指定Content-Type
 const headers = {
   'Content-Type': 'application/json;charset=utf-8'
 }
