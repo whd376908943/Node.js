@@ -3,6 +3,8 @@ import axios from 'axios'
 
 // Content-Type默认为application/x-www-form-urlencoded, 发送data类似于key1=value1&key2=value2,若要发送Json数据,需要指定Content-Type
 // vue 使用 axios 向后端发起请求时, 后端需要允许跨域, 如 koa2 需要使用 koa2-cors 插件
+// Python 发送 application/x-www-form-urlencoded数据时, 用data指定字典即可
+// Python 发送 application/json数据时, 用json指定字典即可，无须手动序列化
 
 const headers = {
   'Content-Type': 'application/json;charset=utf-8'
